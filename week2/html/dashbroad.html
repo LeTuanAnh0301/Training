@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/dashbroad.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/dashbroad.js"></script>
+    <script src="/js/addItem.js"></script>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="device">
+            <ul>
+                <div class="item device">
+                    <i class="material-icons" style="font-size: 30px;">devices</i>
+                    <li><a href="#" style="font-size: 20px;">Device Manager</a></li>
+                </div>
+                <div class="item">
+                    <i class="material-icons">devices_other</i>
+                    <li><a href="#" class="active">Dashbroad</a></li>
+                </div>
+
+                <div class="item">
+                    <i class="material-icons">history</i>
+                    <li><a href="/html/log.html">Logs</a></li>
+                </div>
+                <div class="item">
+                    <i class="material-icons">settings</i>
+                    <li><a href="#">Settings</a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="account">
+                <p>Welcome John<i class="material-icons">account_circle</i></p>
+            </div>
+            <div class="data">
+                <div class="data-header">
+                    <table id="tb">
+                    </table>
+                </div>
+                <div class="data-footer">
+                    <div class="chart">
+
+                    </div>
+                    <form action="" id="input-item">
+                        <input type="text" class="new-item" name="nameitem" id="nameitem" placeholder="name" required
+                            oninvalid="this.setCustomValidity('Please, enter name here')"
+                            oninput="this.setCustomValidity('')">
+                        <input type="text" class="new-item" name="IP" id="IP" placeholder="IP" required
+                            oninvalid="this.setCustomValidity('Please, enter IP here')"
+                            oninput="this.setCustomValidity('')">
+                            <p id="noti"></p>
+                        <button type="button" onclick="addItem()" class="btn-add">ADD DEVICE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
