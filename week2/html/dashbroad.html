@@ -9,31 +9,30 @@
     <link rel="stylesheet" href="/week2/css/dashbroad.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="/week2/js/dashbroad.js"></script>
     <script src="/week2/js/addItem.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="/week2/js/chart.js"></script>
     <script src="/week2/js/reponsive.js"></script>
 </head>
 
 <body>
     <div class="flex-container">
-        <!-- <div class="item-hide">
-            <i class="fa fa-bars"></i>
-            <li><a href="#"></a></li>
-        </div> -->
-        <div class="menu">
-            <ul>
-                <i class="material-icons" style="font-size: 30px;">devices</i>
-                <li><a class="hover-nactive" href="#" style="font-size: 20px;">Device Manager</a></li>
-                <i class="material-icons">devices_other</i>
-                <li><a href="/week2/html/dashbroad.html" class="active">Dashbroad</a></li>
-                <i class="material-icons">history</i>
-                <li><a href="/week2/html/log.html">Logs</a></li>
-                <i class="material-icons">settings</i>
-                <li><a href="#">Settings</a></li>
+        <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <li class="repon-account"><i class="material-icons">account_circle</i><a href="/week2/html/dashbroad.html" class="hover-nactive">Welcom John</a></li>
+                <li class="device-manager"><i class="material-icons" style="font-size: 30px;">devices</i><a class="hover-nactive" href="#" style="font-size: 20px;">Device Manager</a></li>
+                <li><i class="material-icons">devices_other</i><a href="/week2/html/dashbroad.html" class="active">Dashbroad</a></li>
+                <li><i class="material-icons">history</i><a href="/week2/html/log.html">Logs</a></li>
+                <li><i class="material-icons">settings</i><a href="#">Settings</a></li>
             </ul>
         </div>
+        </nav>
         <div class="main">
             <div class="account">
                 <p>Welcome John<i class="material-icons">account_circle</i></p>

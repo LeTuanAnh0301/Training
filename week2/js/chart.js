@@ -53,7 +53,8 @@ function loadChart() {
             title: {
                 display: true,
                 text: "Devices Chart"
-            }
+            },
+            maintainAspectRatio: false
         }
     });
 }
